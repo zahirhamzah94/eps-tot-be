@@ -19,6 +19,7 @@ class CourseCategoryResource extends JsonResource
             'name' => $this->name,
             'code' => $this->code,
             'description' => $this->description,
+            'courses_count' => $this->whenCounted('courses'),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
         ];
